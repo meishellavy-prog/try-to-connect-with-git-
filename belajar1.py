@@ -81,4 +81,5 @@ print ("data boolean : ", data_bool, "bertipe :", type(data_bool))
 #jika diubah ke data string maka nilai 9.5 akan menjadi "9.5"
 #jika diubah ke data boolean maka nilai 9.5 akan menjadi True
 #perubahan-perubahan tipe data ini disebut sebagai type casting
+#boolean akan bernilai False jika nilai datanya adalah 0, 0.0, "", [], {}, (), None
 
