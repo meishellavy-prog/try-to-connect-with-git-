@@ -1,12 +1,13 @@
-print ("hellow")
+print ("hellow") #day 1 tanggal 18 juli 2026 
 # ini adalah kata pertama aku belajar python 
-#comment ini aku buat di commit kedua
+#comment ini aku buat di commit kedua (day 2 tanggal 20 juli 2026)
 #commit kedua aku akan membuat matematika menggunakan variabel
 d = 19 
 m = 5
 y = 2007
 print ("tanggal lahir saya adalah", d, m, y)
-#next belajar tipe data (data type)
+#next belajar tipe data (data type) 
+print ("belajar tipe data (data type)") #day 3 tanggal 21 juli 2026
 data_integer = 8 #data integer adalah data bilangan bulat"
 print ("data integer adalah : ", data_integer)
 print ("bertipe :", type(data_integer))
@@ -48,7 +49,7 @@ data_dictionary = {"nama": "andi", "umur": 20, "alamat": "jakarta"} #data dictio
 print ("data dictionary adalah : ", data_dictionary)
 print ("bertipe :", type(data_dictionary))  
 
-##sekarang tanggal 22 Juli 2026 kita belajar mengubah tipe data
+##sekarang tanggal 22 Juli 2026 kita belajar mengubah tipe data (day 4)
 #jika ingin mengubah tipe data, kita set dulu nilai datanya 
 # ke dalam variabel, 
 # lalu kita ubah tipe datanya menggunakan fungsi bawaan python
@@ -83,7 +84,7 @@ print ("data boolean : ", data_bool, "bertipe :", type(data_bool))
 #perubahan-perubahan tipe data ini disebut sebagai type casting
 #boolean akan bernilai False jika nilai datanya adalah 0, 0.0, "", [], {}, (), None
 
-print ("belajar input data dari user")
+print ("====belajar input data dari user====")
 #input data dari user menggunakan fungsi input()
 nama = input("masukkan nama anda : ")
 umur = input("masukkan umur anda : ")
@@ -101,6 +102,17 @@ print ("data string yang anda masukkan adalah : ", string)
 print ("data boolean yang anda masukkan adalah : ", angka_bool, "bertipe :", type(angka_bool))
 #data boolean akan bernilai True jika nilai datanya adalah 1, 2, 3, 4, 5, 6, 7, 8, 9, dan seterusnya    
 #jadi jika ingin memasukkan data boolean, kodenya harus diubah menjadi int terlebih dahulu, lalu diubah menjadi boolean 
+print ("====Operasi Matematika====")
+#day 5 tanggal 24 juli 2026 
+a = 4
+b = 6
+c = 9
+hasil = a + b * c // a ** b % a 
+print ("hasil dari", a, "+", b, "*", c, "//", a, "**", b, "%", a, "adalah :", hasil)
+#urutan operasi matematika adalah sebagai berikut :
+#1. operasi pangkat (**)
+#2. operasi perkalian (*) dan pembagian (/) dan pembagian bulat (//)
+#3. operasi penjumlahan (+) dan pengurangan (-)
 
 
                                                                 
