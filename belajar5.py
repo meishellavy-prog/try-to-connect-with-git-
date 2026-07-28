@@ -71,3 +71,33 @@ print ('nilai a =', a, ', binary =', format(a, '08b'))
 print ('----------------------------->>')
 print ('nilai h =', h, ', binary =', format(h, '08b'))
 #bitwise adalah operator yang digunakan untuk melakukan operasi pada level bit dari bilangan biner. Operator ini bekerja dengan membandingkan setiap bit dari dua bilangan biner dan menghasilkan bilangan biner baru berdasarkan aturan tertentu. Operator bitwise sering digunakan dalam pemrograman untuk manipulasi data, pengaturan flag, dan optimisasi kinerja.  
+#assignment operator adalah operator yang digunakan untuk memberikan nilai pada variabel. Operator ini menggabungkan operasi aritmatika atau bitwise dengan penugasan nilai ke variabel. Operator assignment memungkinkan kita untuk memperbarui nilai variabel dengan cara yang lebih ringkas dan efisien. 
+print ("======ASSIGNMENT OPERATOR========")
+x = 10
+print ("nilai x =", x)
+x += 5
+print ("nilai x setelah ditambah 5 =", x)
+z = 15
+print ("nilai z =", z)
+z-= 3
+print ("nilai z setelah dikurangi 3 =", z)
+y = 20
+print ("nilai y =", y)
+y *= 4
+print ("nilai y setelah dikali 4 =", y)
+p = 30
+print ("nilai p =", p)
+p /= 5
+print ("nilai p setelah dibagi 5 =", p)
+m = 25
+print ("nilai m =", m)
+m %= 3
+print ("nilai m setelah diambil sisa bagi 3 =", m) 
+n = 10
+print ("nilai n =", n)
+n **= 2
+print ("nilai n setelah dipangkatkan 2 =", n)
+f = 16
+print ("nilai f =", f)
+f //= 2
+print ("nilai f setelah dibagi bulat 2 =", f)
