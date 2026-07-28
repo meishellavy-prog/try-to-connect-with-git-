@@ -1,5 +1,5 @@
 #---------0++++++++5--------8+++++++11---------
-#belajar komparasi dan logika day 7 tanggal 26 Juli 2026 
+#belajar komparasi dan logika day 7 tanggal 28 Juli 2026 
 print ("====belajar komparasi dan logika====")
 #komparasi adalah perbandingan antara dua nilai atau lebih
 #operator komparasi adalah sebagai berikut :
