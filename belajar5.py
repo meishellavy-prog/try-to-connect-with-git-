@@ -57,3 +57,17 @@ print ('nilai a =', a, ', binary =', format(a, '08b'))
 print ('-----------------------------~')
 print ('nilai f =', f, ', binary =', format(f, '08b'))
 
+#bitwise shift left (<<)
+g = a<<2
+print ("======OPERATOR 'SHIFT LEFT'========")
+print ('nilai a =', a, ', binary =', format(a, '08b'))
+print ('-----------------------------<<')
+print ('nilai g =', g, ', binary =', format(g, '08b'))
+
+#bitwise shift right (>>)
+h = a>>2
+print ("======OPERATOR 'SHIFT RIGHT'========")
+print ('nilai a =', a, ', binary =', format(a, '08b'))
+print ('----------------------------->>')
+print ('nilai h =', h, ', binary =', format(h, '08b'))
+#bitwise adalah operator yang digunakan untuk melakukan operasi pada level bit dari bilangan biner. Operator ini bekerja dengan membandingkan setiap bit dari dua bilangan biner dan menghasilkan bilangan biner baru berdasarkan aturan tertentu. Operator bitwise sering digunakan dalam pemrograman untuk manipulasi data, pengaturan flag, dan optimisasi kinerja.  
