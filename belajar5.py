@@ -22,3 +22,38 @@ print ("hasil dari komparasi lebih dari 8 dan kurang dari 11 adalah : ", lebihda
 
 hasil = lebihdari3AtauKurangdari5 or lebihdari8AtauKurangdari11     
 print ("hasil dari komparasi dan logika adalah : ", hasil)  
+
+#operator bitwise, biner, dan binary
+a = 7
+b= 3
+# bitwise OR (|)
+c = a|b
+print ("======OPERATOR 'OR'========")
+print ('nilai a =', a, ', binary =', format(a, '08b'))
+print ('nilai b =', b, ', binary =', format(b, '08b'))
+print ('-----------------------------or')
+print ('nilai c =', c, ', binary =', format(c, '08b'))
+
+# bitwise AND (&)
+d = a&b
+print ("======OPERATOR 'AND'========")
+print ('nilai a =', a, ', binary =', format(a, '08b'))
+print ('nilai b =', b, ', binary =', format(b, '08b'))
+print ('-----------------------------&')
+print ('nilai d =', d, ', binary =', format(d, '08b'))
+
+# bitwise XOR (^)
+e = a^b
+print ("======OPERATOR 'XOR'========")
+print ('nilai a =', a, ', binary =', format(a, '08b'))
+print ('nilai b =', b, ', binary =', format(b, '08b'))
+print ('-----------------------------^')
+print ('nilai e =', e, ', binary =', format(e, '08b'))
+
+#bitwise NOT (~)
+f = ~a
+print ("======OPERATOR 'NOT'========")
+print ('nilai a =', a, ', binary =', format(a, '08b'))
+print ('-----------------------------~')
+print ('nilai f =', f, ', binary =', format(f, '08b'))
+
