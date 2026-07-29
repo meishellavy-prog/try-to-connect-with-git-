@@ -50,3 +50,82 @@ print ("data dictionary adalah : ", data_dictionary)
 print ("bertipe :", type(data_dictionary))  
 
 #beberapa file di pindahkan ke belajar 2, 3, dan 4 py agar mempermudah melihat progressnya 
+
+# day 8 tanggal 29 Juli 2026 
+# pengenalan penggunaan string dan operator string
+# 1. operator penjumlahan (+) untuk menggabungkan string
+a = "belajar"
+b = "python"
+c = a + " " + b
+print ("======OPERATOR 'PENJUMLAHAN'========")
+print ('nilai a =', a)
+print ('nilai b =', b)
+print ('-----------------------------+')
+print ('nilai c =', c)
+
+# 2. operator perkalian (*) untuk mengulang string
+d = "belajar"
+e = d * 3
+print ("======OPERATOR 'PERKALIAN'========")
+print ('nilai d =', d)
+print ('-----------------------------*')
+print ('nilai e =', e)
+
+# 3. operator keanggotaan (in) untuk mengecek apakah string terdapat dalam string lain
+f = "belajar"
+g = "belajar python"
+h = f in g
+print ("======OPERATOR 'KEANGGOTAAN'========")
+print ('nilai f =', f)
+print ('nilai g =', g)
+print ('-----------------------------in')
+print ('nilai h =', h)
+
+# 4. operator identitas (is) untuk mengecek apakah dua string adalah objek yang sama
+i = "belajar"
+j = "belajar"
+k = i is j
+print ("======OPERATOR 'IDENTITAS'========")
+print ('nilai i =', i)
+print ('nilai j =', j)
+print ('-----------------------------is')
+print ('nilai k =', k)
+
+#5. cara membuat string ada 2 cara yaitu dengan menggunakan tanda kutip tunggal (') atau tanda kutip ganda (")
+l = 'belajar'
+m = "belajar"
+n = l is m
+print ("======CARA MEMBUAT STRING========")
+print ('nilai l =', l)
+print ('nilai m =', m)
+print ('-----------------------------is')
+print ('nilai n =', n) 
+
+#6. menggunkan tanda \
+#\ untuk mengetik tanda kutip tunggal (') dan tanda kutip ganda (") di dalam string
+#contoh :
+print ('misalnya saya ingin mengetik hari jumat, maka saya harus mengetik hari jum\'at')
+#atau menggunakan tanda kutip berbeda 
+print ("misalnya saya ingin mengetik hari jumat, maka saya harus mengetik hari jum'at")#jadi luarnya menggunakan tanda kutip " sedangkan yang didalamnya menggunakan ' atau sebaliknya 
+#\t untuk melakukan tab antara satu kata ke kata yang lain 
+print ("misalnya saya ketik mishel \t noer, mishel dan noer akan berjauhan")
+#jika ada tanda \ di dalam string apabila mau di print kan maka kita double kan tandanya seperti ini \\
+print ("nih gini\\misalnya\\yaaa")
+#\n untuk enter ke line baru 
+print ("kalau mau enter ya pencetnya ini \n gituuu")
+
+#7. menggunakan raw atau string literal
+#gunanya itu untuk nge print semua yang ada di dalam string meskipun berupa simbol seperti \,",',\t,\n, ini berguna kalau simbol yang digunakan banyak jadi mempercepat waktu
+print (r"kayak gini\{:''}gimana pun itu")
+#8. multiline literal string 
+#bisa digunakan seperti enter \n tapi menggunakan 3 kali double quote """
+print ("""ini contoh ya,
+begini ya guys caranya
+""")
+#9. multiline literal string dan raw 
+print (r"""
+jika seperti ini anda bisa membuat semua tanda untuk di print 
+dan enter tanpa simbol ribet \\n\t\jsbdu""")
+
+
+
