@@ -110,22 +110,44 @@ print ("misalnya saya ingin mengetik hari jumat, maka saya harus mengetik hari j
 #\t untuk melakukan tab antara satu kata ke kata yang lain 
 print ("misalnya saya ketik mishel \t noer, mishel dan noer akan berjauhan")
 #jika ada tanda \ di dalam string apabila mau di print kan maka kita double kan tandanya seperti ini \\
-print ("nih gini\\misalnya\\yaaa")
+print ("contoh\\penggunaannya\\yaaa")
 #\n untuk enter ke line baru 
-print ("kalau mau enter ya pencetnya ini \n gituuu")
+print ("kalau mau enter ketik ini, \n gituuu")
 
 #7. menggunakan raw atau string literal
 #gunanya itu untuk nge print semua yang ada di dalam string meskipun berupa simbol seperti \,",',\t,\n, ini berguna kalau simbol yang digunakan banyak jadi mempercepat waktu
-print (r"kayak gini\{:''}gimana pun itu")
+print (r"Apabila sudah ditambahkan huruf r lalu tanda petik, maka simbol apapun di dalam string ini akan akan tetap di print baik itu \n\t\\\:;'gitu yaaa ")
+
 #8. multiline literal string 
 #bisa digunakan seperti enter \n tapi menggunakan 3 kali double quote """
 print ("""ini contoh ya,
-begini ya guys caranya
+Nama saya : Meishella
+Umur saya : 19 tahun 
 """)
 #9. multiline literal string dan raw 
 print (r"""
-jika seperti ini anda bisa membuat semua tanda untuk di print 
-dan enter tanpa simbol ribet \\n\t\jsbdu""")
+Bisa print multiline dan juga simbol simbol seperti ini: \\n\t\j
+meishella/noer/alysia/19thn""")
 
+#sesi 2 day 8 tanggal 29 Juli 2026 
+#manipulasi string 
+#1. menggabungkan string 
+#contoh :
+nama_awal = "Meishella"
+nama_tengah = "Noer" 
+nama_akhir = "Alysia"
+Nama_saya = nama_awal + " " + nama_tengah + " " + nama_akhir
+print ("Nama saya adalah :", Nama_saya)
+#jika tidak menambahkan tanda petik kosong, nanti nama nya akan kegabung. 
+#2. mengetahui panjang sebuah string 
+#kita menggunakan len yaitu panjang, contohnya :
+panjang_string_nama = len(Nama_saya)
+print ("panjang string :", Nama_saya, "adalah :", str(panjang_string_nama))
+#ini seperti yang dipelajari tadi 
+#3. operator 'not in' kalau sebelumnya belajar beberapa operator string termasuk 'in', sekarang operator 
+#not in, operator not in berguna untuk mengecek apakah suatu string atau suatu simbol dan bagian ada di dalam string yang kita maksud. 
+elemen = "saya" 
+tidak_ada = elemen not in Nama_saya 
+print ("tidak ada elemen:", elemen, ",di dalam string:", Nama_saya, "apakah benar?:", str(tidak_ada))
 
 
