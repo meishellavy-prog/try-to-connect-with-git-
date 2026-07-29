@@ -150,4 +150,36 @@ elemen = "saya"
 tidak_ada = elemen not in Nama_saya 
 print ("tidak ada elemen:", elemen, ",di dalam string:", Nama_saya, "apakah benar?:", str(tidak_ada))
 
+#mengambil beberapa bagian dari string menggunakan index 
+#notes : jika length di baca dari paling kiri dihitung mulai dari 1, maka index dihitung mulai dari 0
+#mudah, hanya menggunakan kurung kotak [] 
+print ("index ke-1:" + Nama_saya [1])
+#jika kita tulis nya -1 maka akan dihitunng mundur dari huruf paling belakang
+print ("index ke-(-1):" + Nama_saya [-1])
+#jika ingin mengambil dari index ke x menuju index ke y maka :
+print ("index ke-(0:8):"+ Nama_saya [0:9])#jadi kalo misalnya tulis indexnya x menuju y, y nya ditambah 1 
+#jika kita mau ngambil beberapa index dengan jarak yang berpola, misalnya jaraknya 2, maka :
+print ("index ke-(0,2,4,6,8,10):" + Nama_saya [0:10:2])
+#jadi titik awal : titik akhir (gausah ditambah lagi) : jarak antar nilai yang mau di ambil 
+#untuk mencari item yang paling kecil maupun paling besar bisa menggunakan 
+print ("nilai yang paling kecil adalah ;", min(Nama_saya))
+print ("nilai yang paling besar adalah ;", max(Nama_saya))
+#nilainya bisa dihitung sesuai urutan alfabet 
+#jika kita ingin mengetahui di posisi mana elemen itu berada, kita bisa menggunakan ASCII code. 
+#dimana ascii akan menunjukkan elemen itu ada di nomor berapa, biasanya dalam suatu string,
+#Nilai minimum yang tadi kita coba print adalah nilai ascii yang paling kecil
+#sedangkan nilai maxikmum yang tadi kita coba print kan juga adalah elemen yang memiliki nilai ascii terbesar
+#kita bisa menanyakan nomor ascii  suatu elemen maupun kita bisa mengecek nomor ascii ada untuk elemen apa
+#misalnya jika kita ingin mencari tahu nomor ascii dari spasi " "
+cari_ascii_spasi = ord(" ")
+print ("ASCII dari spasi adalah :"+ str(cari_ascii_spasi))
+#atau mencari tahu ascii nilai y 
+cari_ascii_y = ord("y")
+print ("ASCII dari nilai 'y' adalah :"+ str(cari_ascii_y))
+#atau kita mencari tahu elemen atau character dari nomor ascii nya 
+nomorascii = 122
+print ("char dari nilai ASCII 90 adalah:" + chr(nomorascii))
+
+
+
 
