@@ -79,4 +79,7 @@ print(data_you)
 data_pisah = ['computer','sciece']
 data_gabungan = ' '.join(data_pisah)
 print (data_gabungan)
+#jadi kata ' ' itu adalah objek yang jadi penggabung dari list nya itu
+#misalnya kita menggabungkan list itu menggunakan tanda koma ','
+#maka hasilnya akan computer,science
 
