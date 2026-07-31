@@ -26,7 +26,7 @@ apakah_besar = data3.isupper()
 print ("hasilnya data3 :"+ data3 + "\napakah merupakan huruf besar?" + str(apakah_besar))
 #jika isinya tidak valid maka hasilnya akan false 
 
-#Contoh metode lain :
+#day 10 tanggal 31 Juli Contoh metode lain :
 
 #1) capitalize() <-- Membuat karakter pertama di string menjadi uppercase
 tes_capitalize = "ayam goreng enak"
@@ -62,4 +62,21 @@ cek_hasil = tes_expandtabs.expandtabs(10)
 print(cek_hasil)
 
 #------> Hasil : Ayam      Goreng    Suharti
+
+#isalpha() (untuk mengecek apakah semuanya huruf)
+#isalnum() (untuk mengecek apakah ada huruf dan angka)
+#isdecimal() (untuk mengecek apakah semuanya angka)
+#isspace() (untuk mengecek adanya spasi, tab, maupun newline \n)
+#istitle() (untuk mengecek masing masing kata diawali dengan huruf kapital)
+
+#kita juga bisa cek apakah bagian dari suatu data dibagian depan dan akhirnya
+data_me = "computer science".endswith("science")
+print(data_me)
+data_you = "computer science".startswith("science")
+print(data_you)
+
+#penggabungan list data join split 
+data_pisah = ['computer','sciece']
+data_gabungan = ' '.join(data_pisah)
+print (data_gabungan)
 
