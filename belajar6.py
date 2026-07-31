@@ -25,3 +25,41 @@ print ("hasilnya data2 :"+ data2 + "\napakah merupakan huruf kecil?" + str(apaka
 apakah_besar = data3.isupper()
 print ("hasilnya data3 :"+ data3 + "\napakah merupakan huruf besar?" + str(apakah_besar))
 #jika isinya tidak valid maka hasilnya akan false 
+
+#Contoh metode lain :
+
+#1) capitalize() <-- Membuat karakter pertama di string menjadi uppercase
+tes_capitalize = "ayam goreng enak"
+cek_hasil = tes_capitalize.capitalize()
+print(cek_hasil)
+
+tes_capitalize = "AYAM GORENG ENAK"
+cek_hasil = tes_capitalize.capitalize()
+print(cek_hasil)
+
+#------> Hasil keduanya : Ayam goreng enak
+
+#2) casefold() <-- sama dengan lower()
+#bedanya, casefold() mengkonversi karakter tidak umum menjadi lowercase karakter umum
+#Contoh  : 'ß' (german) = menjadi 'ss'
+
+tes_casefold = "außen IS AN GERMAN WORD"
+cek_hasil = tes_casefold.casefold()
+print(cek_hasil)
+
+#------> Hasil : aussen is an german word
+
+#3) swapcase() <-- Uppercase jadi lowercase dan kebalikannya
+tes_swapcase = "Ayam Goreng Suharti"
+cek_hasil = tes_swapcase.swapcase()
+print(cek_hasil)
+
+#------> Hasil : aYAM gORENG sUHARTI
+
+#4) expandtabs () <-- Mengatur lebar tab (\t)
+tes_expandtabs = "Ayam\tGoreng\tSuharti"
+cek_hasil = tes_expandtabs.expandtabs(10)
+print(cek_hasil)
+
+#------> Hasil : Ayam      Goreng    Suharti
+
