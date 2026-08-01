@@ -1,4 +1,4 @@
-##sekarang tanggal 22 Juli 2026 kita belajar mengubah tipe data (day 4)
+## tanggal 22 Juli 2026 (day 4)
 #jika ingin mengubah tipe data, kita set dulu nilai datanya 
 # ke dalam variabel, 
 # lalu kita ubah tipe datanya menggunakan fungsi bawaan python
