@@ -256,3 +256,8 @@ print (f"angka : {angka4:.2f}")
 angka5 = 1000000
 print (f"angka : {angka5:,}")  
 #hasilnya nanti akan menjadi 1,000,000, dan f-string akan otomatis mengubah data yang bukan string menjadi string, misalnya data yang berupa integer, float, boolean, dll.  
+#jika kita ingin ada 6 elemen yang di print kan dari angka tersebut, lalu kita ingin hanya 2 angka di belakang koma, kita bisa menambahkan angka4:6.2f 
+#di bagian depannya akan jadi kosong, apabila kita ingin mengisinya dengan angka 0, kita bisa menambahkan angka4:06.2f, contoh :
+angka6 = 19.56789
+print (f"angka : {angka6:06.2f}")
+print (f"angka : {angka6:6.2f}")
