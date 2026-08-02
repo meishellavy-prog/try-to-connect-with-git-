@@ -270,4 +270,7 @@ print (f"angka : {angka8:+.2f}")
 #jika ingin menambahkan tanda persen, kita bisa menambahkan tanda % di dalam tanda {}, contoh :
 angka9 = 19.56789
 print (f"angka : {angka9:.2%}")
-#
+#aritmatika juga bisa kita lakukan di dalam f-string, contoh :
+angka10 = 19.56789
+angka11 = 10
+print (f"angka : {angka10 + angka11:.2f}")
