@@ -261,3 +261,13 @@ print (f"angka : {angka5:,}")
 angka6 = 19.56789
 print (f"angka : {angka6:06.2f}")
 print (f"angka : {angka6:6.2f}")
+#jika ingin menambahkan tanda + di depan angka, kita bisa menambahkan tanda + di dalam tanda {}, contoh :
+angka7 = 19.56789
+print (f"angka : {angka7:+.2f}")        
+#itu jufa berlaku untuk angka negatif, contoh :
+angka8 = -19.56789
+print (f"angka : {angka8:+.2f}")    
+#jika ingin menambahkan tanda persen, kita bisa menambahkan tanda % di dalam tanda {}, contoh :
+angka9 = 19.56789
+print (f"angka : {angka9:.2%}")
+#
