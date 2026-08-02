@@ -213,3 +213,46 @@ print (data_gabungan)
 #misalnya kita menggabungkan list itu menggunakan tanda koma ','
 #maka hasilnya akan computer,science
 
+#format string 
+#jadi format string itu adalah kita bisa menambahkan suatu data di dalam string
+#contoh :
+nama = "Meishella"
+umur = 19
+print ("Nama saya adalah {} dan umur saya adalah {}".format(nama,umur))
+#jadi tanda {} itu adalah tempat untuk menaruh data yang kita mau, dan data itu kita taruh di dalam format()
+#jadi data yang kita taruh di dalam format() itu akan masuk ke dalam tanda {} sesuai urutan nya, misalnya data pertama di dalam format() akan masuk ke tanda {} pertama, dan seterusnya
+#kita juga bisa menaruh data di dalam tanda {} sesuai urutan nya
+print ("Nama saya adalah {1} dan umur saya adalah {0}".format(umur,nama))
+#jadi data yang kita taruh di dalam format() itu akan masuk ke dalam tanda {} sesuai urutan nya     
+#format string juga bisa menggunakan f-string, contoh :
+nama = "Meishella"
+umur = 19
+print (f"Nama saya adalah {nama} dan umur saya adalah {umur}")  
+#jadi mempersingkat penulisan format string, kita tidak perlu menulis format() lagi, cukup menambahkan f di depan tanda petik, dan data yang mau kita taruh di dalam tanda {} langsung kita tulis saja  
+#biasanya kita ketik begini :
+angka1 = "angka :" + str(umur)
+print (angka1)
+#jadi kita harus menambahkan str() untuk mengubah data yang bukan string menjadi string, misalnya data yang berupa integer, float, boolean, dll. 
+#tapi dengan f-string kita tidak perlu menambahkan str() lagi, karena f-string akan otomatis mengubah data yang bukan string menjadi string, misalnya data yang berupa integer, float, boolean, dll.    
+angka1 = f"angka : {umur}"
+print (angka1)
+#boolean juga bisa kita taruh di dalam f-string, contoh :   
+boolean = True
+print (f"boolean : {boolean}")
+#kita bisa mempersingkat tanpa menulis str() lagi, karena f-string akan otomatis mengubah data yang bukan string menjadi string, misalnya data yang berupa integer, float, boolean, dll.    
+#untuk menampilkan bahwa angka itu adalah bilangan bulat, kita bisa menambahkan :d di dalam tanda {}, contoh :
+angka2 = 19
+print (f"angka : {angka2:d}")
+#jadi :d itu adalah format untuk menampilkan bilangan bulat, dan f-string akan otomatis mengubah data yang bukan string menjadi string, misalnya data yang berupa integer, float, boolean, dll.    
+#untuk menampilkan bahwa angka itu adalah bilangan desimal, kita bisa menambahkan :f di dalam tanda {}, contoh :
+angka3 = 19.5
+print (f"angka : {angka3:f}")
+#jadi :f itu adalah format untuk menampilkan bilangan desimal, dan f-string akan otomatis mengubah data yang bukan string menjadi string, misalnya data yang berupa integer, float, boolean, dll.    
+#untuk menampilkan bahwa angka itu adalah bilangan desimal dengan 2 angka di belakang koma, kita bisa menambahkan :.2f di dalam tanda {}, contoh :
+angka4 = 19.56789
+print (f"angka : {angka4:.2f}")
+#jadi :.2f itu adalah format untuk menampilkan bilangan desimal dengan 2 angka di belakang koma, dan f-string akan otomatis mengubah data yang bukan string menjadi string, misalnya data yang berupa integer, float, boolean, dll. 
+#bilangan ribuan bisa kita tambahkan tanda koma di dalam tanda {}, contoh :
+angka5 = 1000000
+print (f"angka : {angka5:,}")  
+#hasilnya nanti akan menjadi 1,000,000, dan f-string akan otomatis mengubah data yang bukan string menjadi string, misalnya data yang berupa integer, float, boolean, dll.  
