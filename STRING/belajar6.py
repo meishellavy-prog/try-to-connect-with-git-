@@ -213,7 +213,7 @@ print (data_gabungan)
 #misalnya kita menggabungkan list itu menggunakan tanda koma ','
 #maka hasilnya akan computer,science
 
-#format string 
+#format string day 11 tanggal 2 agustus 2026 
 #jadi format string itu adalah kita bisa menambahkan suatu data di dalam string
 #contoh :
 nama = "Meishella"
@@ -274,3 +274,29 @@ print (f"angka : {angka9:.2%}")
 angka10 = 19.56789
 angka11 = 10
 print (f"angka : {angka10 + angka11:.2f}")
+
+#string multiline menggunakan enter \n (day 12 tanggal 3 agustus 2026) contoh :
+hari = "senin"
+tanggal = "3 agustus 2026"
+print (5*"-"+"STRING MULTILINE"+5*"-")
+print (f"hari : {hari}\ntanggal : {tanggal}")
+#string multiline menggunakan 3 tanda petik :
+print (f"""
+hari : {hari}
+tanggal : {tanggal}
+""")
+
+#jika ingin meratakan suatu data string ke kiri, kanan, atau tengah, kita bisa menggunakan method ljust(), rjust(), dan center() 
+#contoh :
+data1 = "Meishella"
+data2 = "Noer"
+data3 = "Alysia"
+print (f"{data1.ljust(20)}{data2.center(20)}{data3.rjust(20)}")
+#jadi ljust() itu untuk meratakan ke kiri, rjust() itu untuk meratakan ke kanan, dan center() itu untuk meratakan ke tengah, dan angka 20 itu adalah jumlah karakter yang akan digunakan untuk meratakan data string tersebut, jika jumlah karakter data string lebih dari 20, maka data string akan tetap ditampilkan sesuai panjang aslinya, dan jika jumlah karakter data string
+# kurang dari 20, maka akan ditambahkan spasi di kiri, kanan, atau tengah sesuai method yang digunakan, dan f-string akan otomatis mengubah data yang bukan string menjadi string, misalnya data yang berupa integer, float, boolean, dll.      
+#atau bisa juga :
+print (f"""
+nama depan    : {data1:>9}
+nama tengah   : {data2:>9}
+nama belakang : {data3:>9}
+""")
