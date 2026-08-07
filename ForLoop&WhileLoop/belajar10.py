@@ -15,3 +15,14 @@ for i in range(1, 11):#ini akan menampilkan list angka dari 1 sampai 10
     #kenapa tidak termasuk stop? karena range itu digunakan untuk membuat list angka, dan list itu dimulai dari 0. jadi kalau mau sampai 10 harus ditulis 11.
 print ("\n",10*"=","AKHIR DARI MATERI FOR LOOP",10*"=","\n")
 
+#while loop
+#berguna untuk melakukan perulangan pada suatu data,
+#namun while loop ini akan terus melakukan perulangan selama kondisi yang diberikan masih bernilai True. jadi jika kondisi yang diberikan bernilai False maka perulangan akan berhenti.
+print (20*"=","WHILE LOOP",20*"=")
+angka = 1
+while angka <= 10:#ini akan menampilkan list angka dari 1 sampai 10
+    print(f"angka ke-{angka} adalah {angka}")
+    angka += 1#ini adalah increment, jadi setiap perulangan angka akan bertambah 1
+
+print ("\n",10*"=","AKHIR DARI MATERI WHILE LOOP",10*"=","\n")
+
