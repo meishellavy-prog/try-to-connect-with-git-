@@ -1,5 +1,5 @@
 #day 14 tanggal 6 agustus 2026
-kalkulator sederhana
+#kalkulator sederhana
 print(20*"=","SELAMAT DATANG DI KALKULATOR SEDERHANA",20*"=")
 angka1 = float(input("masukkan angka pertama: "))
 operator = input("masukkan operator (+, -, *, /): ")
