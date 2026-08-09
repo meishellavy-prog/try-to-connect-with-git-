@@ -27,3 +27,4 @@ for i in nama:
         break
     print(f"selamat {i}, kamu lulus ujian")
 print ("loh jadi hanya ini yang lulus ujian?")
+
