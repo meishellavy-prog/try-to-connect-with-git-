@@ -1,4 +1,5 @@
-#membuat perulangan menggunakan for loop 
+#day 17 tanggal 9 agustus 2026 
+# membuat perulangan menggunakan for loop 
 variabel = "O"
 print ("membuat segitiga siku-siku menggunakan perulangan for")
 for i in range(20):
@@ -7,7 +8,7 @@ for i in range(20):
 
 print ("akhir dari program")
 #jika memakai while 
-
+#day 18 tanggal 10 agustus 2026
 print ("membuat segitiga siku-siku menggunakan perulangan while")
 #jika ingin panjang jumlah char yang ada di variabel kedua selalu ganjil maka
 kedua = "A"
