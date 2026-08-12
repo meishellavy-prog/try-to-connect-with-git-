@@ -31,6 +31,62 @@ print (data_pake_for_if)
 data_pake_for_if = [i for i in range(1,11) if i%2]
 print (data_pake_for_if)
 
+#day 20 tanggal 12 agustus 
+#manipulasi list
+data_list = ["satu", "dua", "tiga"]
+print("="*5 + " manipulasi list " + "="*5)
+print("Awal:", data_list)
 
+# menambahkan item
+data_list.append("empat")
+print("append:", data_list)
 
+# menyisipkan item di indeks tertentu
+data_list.insert(1, "setengah")
+print("insert:", data_list)
 
+# menggabungkan list lain
+data_list.extend(["lima", "enam"])
+print("extend:", data_list)
+
+# menghapus item berdasarkan nilai
+data_list.remove("setengah")
+print("remove:", data_list)
+
+# menghapus item berdasarkan indeks
+dihapus = data_list.pop(2)
+print("pop:", dihapus, data_list)
+
+# mengganti nilai
+data_list[0] = "satu ulang"
+print("ganti:", data_list)
+
+# mengambil indeks suatu nilai
+idx = data_list.index("lima")
+print("index 'lima':", idx)
+
+# menghitung kemunculan nilai
+jumlah = data_list.count("lima")
+print("count 'lima':", jumlah)
+
+# membalik urutan list
+data_list.reverse()
+print("reverse:", data_list)
+
+# mengurutkan list jika datanya sama tipe
+angka = [3, 1, 4, 2, 5]
+angka.sort()
+print("sort:", angka)
+
+# membuat salinan list
+salinan = data_list.copy()
+print("copy:", salinan)
+
+# slicing list
+potong = data_list[1:4]
+print("slice [1:4]:", potong)
+
+# clear list
+data_baru = ["a", "b", "c"]
+data_baru.clear()
+print("clear:", data_baru)
