@@ -33,6 +33,7 @@ print (data_pake_for_if)
 
 #day 20 tanggal 12 agustus 
 #manipulasi list
+#index suatu list dihitung dari 0 
 data_list = ["satu", "dua", "tiga"]
 print("="*5 + " manipulasi list " + "="*5)
 print("Awal:", data_list)
@@ -90,3 +91,25 @@ print("slice [1:4]:", potong)
 data_baru = ["a", "b", "c"]
 data_baru.clear()
 print("clear:", data_baru)
+
+#day 21 tanggal 13 agustus 2026 
+#copy list
+list_a = ["aku", "saya", "gue"]
+list_b = list_a
+print (f"list a adalah: \n {list_a}")
+print (f"list b adalah: \n {list_b}")
+list_a[2] = "GW"
+print (f"list a setelah dirubah: \n {list_a}")
+print (f"list b setelah list a dirubah: \n {list_b}")
+print (f"""jadi jika hanya menggunakan operasi list_a = list_b,
+maka alamat dari data a dan data b sama, hanya berbeda nama saja
+apabila kita ingin merubah salah satu bagian dari data, maka kedua data
+akan ikut berubah
+""")
+#namun jika menggunakan operasi list_c = list_a.copy() maka akan menghasilkan 
+#dua data yang sama dengan alamat yang berbeda sehingga bisa dirubah 
+list_c = list_a.copy()
+print (f"list a adalah : \n {list_a} \n list b adalah: \n {list_b} \n list_c adalah: \n {list_c}")
+list_c[0] = "akuh"
+
+print (f"list a adalah : \n {list_a} \n list b adalah: \n {list_b} \n list_c adalah: \n {list_c}")
