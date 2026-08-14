@@ -113,3 +113,110 @@ print (f"list a adalah : \n {list_a} \n list b adalah: \n {list_b} \n list_c ada
 list_c[0] = "akuh"
 
 print (f"list a adalah : \n {list_a} \n list b adalah: \n {list_b} \n list_c adalah: \n {list_c}")
+
+#day 22 tanggal 14 agustus 2026 
+#nested list 
+"""
+Pelajaran: Nested List (List Bersarang) di Python
+
+Isi:
+- Penjelasan singkat tentang nested list
+- Cara mengakses elemen
+- Contoh penggunaan `for` dan nested `for`
+- Contoh list comprehension untuk nested list
+- Latihan singkat beserta solusi
+"""
+
+def contoh_matrix():
+    # Nested list sebagai matriks 2x3
+    matrix = [
+        [1, 2, 3],
+        [4, 5, 6]
+    ]
+    print("Matrix:")
+    for row in matrix:
+        print(row)
+    # Akses elemen (baris 2, kolom 3) -> indeks [1][2]
+    print("Elemen baris 2 kolom 3:", matrix[1][2])
+
+
+def iterasi_nested_for():
+    matrix = [
+        [10, 20, 30],
+        [40, 50, 60],
+        [70, 80, 90]
+    ]
+    print("Iterasi nested for (per baris, per elemen):")
+    for i, row in enumerate(matrix):
+        for j, value in enumerate(row):
+            print(f"[{i}][{j}] = {value}")
+
+
+def cetak_format_rapi(matrix):
+    # Cetak matriks rapi
+    for row in matrix:
+        print("\t".join(str(x) for x in row))
+
+
+def flatten_with_comprehension(matrix):
+    # Mengubah nested list jadi list datar
+    flat = [x for row in matrix for x in row]
+    return flat
+
+
+# --- Latihan dan solusi ---
+def sum_all_elements(matrix):
+    # Solusi: jumlahkan semua elemen
+    total = 0
+    for row in matrix:
+        for x in row:
+            total += x
+    return total
+
+
+def transpose(matrix):
+    # Transpose matriks (baris jadi kolom)
+    # Asumsi semua baris memiliki panjang yang sama
+    if not matrix:
+        return []
+    rows = len(matrix)
+    cols = len(matrix[0])
+    trans = [[matrix[r][c] for r in range(rows)] for c in range(cols)]
+    return trans
+
+
+def count_occurrences(matrix, target):
+    # Hitung berapa kali target muncul
+    count = 0
+    for row in matrix:
+        for x in row:
+            if x == target:
+                count += 1
+    return count
+
+
+def _demo_and_tests():
+    print("--- Contoh sederhana ---")
+    contoh_matrix()
+    print()
+
+    print("--- Iterasi contoh ---")
+    iterasi_nested_for()
+    print()
+
+    m = [[1, 2, 3], [4, 5, 6]]
+    print("Cetak rapi:")
+    cetak_format_rapi(m)
+    print("Flatten:", flatten_with_comprehension(m))
+    print()
+
+    # Tes latihan
+    test_matrix = [[1, 2, 3], [4, 5, 6], [1, 2, 3]]
+    print("Sum semua elemen (harus 27):", sum_all_elements(test_matrix))
+    print("Transpose:")
+    cetak_format_rapi(transpose(test_matrix))
+    print("Count occurrences of 1 (harus 2):", count_occurrences(test_matrix, 1))
+
+
+if __name__ == "__main__":
+    _demo_and_tests()
