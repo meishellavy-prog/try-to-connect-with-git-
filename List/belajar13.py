@@ -193,7 +193,7 @@ def count_occurrences(matrix, target):
             if x == target:
                 count += 1
     return count
-
+#def ini menandakan untuk tidak di run dulu sebelum kode ini dipanggil 
 
 def _demo_and_tests():
     print("--- Contoh sederhana ---")
@@ -219,4 +219,30 @@ def _demo_and_tests():
 
 
 if __name__ == "__main__":
-    _demo_and_tests()
+    _demo_and_tests() 
+#nah baru ini di running
+
+#day 23 tanggal 15 agustus 2026
+#latihan list 
+
+list_peserta = []
+
+while True:
+    print("="*10, "List Peserta", "="*10)
+    Nama = input("Masukkan Nama\t:")
+    umur = input("Masukkan Umur\t:")
+    data_peserta =[Nama,umur]
+    list_peserta.append(data_peserta)
+    print ("="*10, "Data Peserta", "="*10)
+    for index,data in enumerate(list_peserta):
+        print (f"{index+1}\t|{data[0]}\t|{data[1]}\t|")
+
+    print ("\n","="*10)
+           
+    last = input("Apakah dilanjut?(y/n)\t:")
+
+    if last == "n":
+        break
+
+print ("done")
+
