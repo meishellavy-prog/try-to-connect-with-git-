@@ -245,4 +245,22 @@ while True:
         break
 
 print ("done")
+#day 24 tanggal 16 agustus 2026 
+#deep copy nested list
+#kalau copy nested list biasa, nanti luarnya memang alamat nya berbeda, tapi list di dalamnya memiliki address yang sama
+#agar list didalamnya menggunakan address yang berbeda kita menggunakan deep copy
+#pertama kita import dulu
+from copy import deepcopy
+data_data1= [5,10]
+data_data2= [6,12]
+data_gabung = [data_data1,data_data2]
+data_deepcopy= deepcopy(data_gabung)
+#kita cek addressnya
+print (f"address data_gabung: {hex(id(data_gabung))}")
+print (f"address data_deepcopy: {hex(id(data_deepcopy))}")
+print (f"address dari list pertama data_gabung : \n {hex(id(data_gabung[0]))}")
+print (f"address dari list pertama data_deepcopy : \n {hex(id(data_deepcopy[0]))}")
+#nahkalo copy biasa, address dari list pertama data_gabung dengan datacopy nya akan sama
+#apabila copy biasa, jika kita mengubah salah satu element di list pertama data gabung, otomatis list pertama datacopy nya juga berubah
+#apabila deepcopy maka address list nya akan berbeda sehingga kalo di ubah, yang berubah hanya satu saja
 
