@@ -57,5 +57,36 @@ for key, value in data_siswa.items():
 
 # 10. Mengecek apakah sebuah key ada
 if 'nama' in data_siswa:
-    print('Key nama ada di dictionary')
+    print('Key nama ada di dictionary\n\n')
     
+#day 28 tanggal 20 agustus 2026 
+#for loop data dictionary 
+data_guru = {
+    'math' : 'Rina',
+    'olga' : 'Agi'
+    }
+
+for guru in data_guru:
+    print (guru)
+
+keys = data_guru.keys()
+print (keys)
+
+for key in data_guru.keys():
+    print (data_guru.get(key))
+
+values = data_guru.values()
+print (values)
+
+for value in data_guru.values():
+    print(value)
+
+items = data_guru.items()
+print(items)
+
+for item in data_guru.items():
+    print(item)
+
+
+for key,value in data_guru.items():
+    print (f"guru {key} adalah : {value}")
