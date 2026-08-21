@@ -90,3 +90,35 @@ for item in data_guru.items():
 
 for key,value in data_guru.items():
     print (f"guru {key} adalah : {value}")
+
+#nested dictionary day 29 21 agustus 2026
+import datetime
+mahasiswa_ui1 = {
+    'nama' : 'Meishella',
+    'nim' : '12000101',
+    'tanggal lahir' : datetime.datetime(2007,5,19)
+}
+
+
+mahasiswa_ui2 = {
+    'nama' : 'Lala',
+    'nim' : '12000102',
+    'tanggal lahir' : datetime.datetime(2006,5,10)
+}
+
+data_mahasiswa = {
+    'MU1001' : mahasiswa_ui1,
+    'MU1002' : mahasiswa_ui2
+}
+
+print (f"\n{'Nama':<10} {'NIM': <8} {'Tanggal Lahir'} ")
+print ("-"*50)
+
+for mahasiswa in data_mahasiswa:
+    KEY = mahasiswa 
+
+    NAMA = data_mahasiswa[KEY]['nama']
+    NIM = data_mahasiswa[KEY]['nim']
+    LAHIR = data_mahasiswa[KEY]['tanggal lahir'].strftime("%x")
+
+    print (f"{NAMA:<10} {NIM:<10} {LAHIR} ")
