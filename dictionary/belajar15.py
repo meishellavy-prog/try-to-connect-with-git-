@@ -122,3 +122,6 @@ for mahasiswa in data_mahasiswa:
     LAHIR = data_mahasiswa[KEY]['tanggal lahir'].strftime("%x")
 
     print (f"{NAMA:<10} {NIM:<10} {LAHIR} ")
+
+#day 30 tanggal 22 Agustus 2026 
+#skip day karena sinyal ga mendukung untuk materi baru
