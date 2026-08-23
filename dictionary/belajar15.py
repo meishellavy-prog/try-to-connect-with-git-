@@ -125,3 +125,5 @@ for mahasiswa in data_mahasiswa:
 
 #day 30 tanggal 22 Agustus 2026 
 #skip day karena sinyal ga mendukung untuk materi baru
+#day 31 taggal 23 agustus 2026
+#skip day karena sinyal masih ga mendukung (belum beli wifi:()
