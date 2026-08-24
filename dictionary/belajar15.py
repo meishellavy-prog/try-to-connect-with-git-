@@ -121,9 +121,13 @@ for mahasiswa in data_mahasiswa:
     NIM = data_mahasiswa[KEY]['nim']
     LAHIR = data_mahasiswa[KEY]['tanggal lahir'].strftime("%x")
 
-    print (f"{NAMA:<10} {NIM:<10} {LAHIR} ")
+    print (f"{NAMA:<10} {NIM:<10} {LAHIR}")
 
 #day 30 tanggal 22 Agustus 2026 
 #skip day karena sinyal ga mendukung untuk materi baru
+#jika ingin run kode tanpa terganggu tulisan awal yang panjang maka bisa menggunakan import os 
+#untuk windows itu os.system("sls")
+#untuk macos atau linux menggunakan os.system("clear")
 #day 31 taggal 23 agustus 2026
 #skip day karena sinyal masih ga mendukung (belum beli wifi:()
+
