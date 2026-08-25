@@ -129,5 +129,25 @@ for mahasiswa in data_mahasiswa:
 #untuk windows itu os.system("sls")
 #untuk macos atau linux menggunakan os.system("clear")
 #day 31 taggal 23 agustus 2026
+#jika ingin menambah kode key yang berbeda beda menggunakan import random & import string
 #skip day karena sinyal masih ga mendukung (belum beli wifi:()
+#day 32 tanggal 24 agustus 2026 
+import datetime
+import string
+import random
+import os
+
+data_template = {
+    'Nama Barang' : 'Nama Barang',
+    'Harga' : 0000,
+    'Tanggal Masuk' : datetime.datetime(1111,1,11)
+}
+data_barang = {}
+#DAY 33 TANGGAL 25 AGUSTUS 2026 
+os.system("clear")
+
+input_barang = input("Masukkan Nama Barang yang akan di Input:")
+input_harga = int(input("Masukkan Harga Barang:"))
+input_Tanggal = input("Masukkan Tanggal (YYYY,MM,DD)")
+
 
