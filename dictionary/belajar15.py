@@ -140,14 +140,36 @@ import os
 data_template = {
     'Nama Barang' : 'Nama Barang',
     'Harga' : 0000,
-    'Tanggal Masuk' : datetime.datetime(1111,1,11)
+    'Tanggal_Masuk' : datetime.datetime(1111,1,11)
 }
 data_barang = {}
 #DAY 33 TANGGAL 25 AGUSTUS 2026 
-os.system("clear")
+while True:
+    os.system("clear")
+    data = dict.fromkeys(data_barang.keys())
+    data['Nama Barang'] = input("Masukkan Nama Barang yang akan di Input: ")
+    data['Harga'] = int(input("Masukkan Harga Barang: "))
+    TANGGAL = int(input("Masukkan Tanggal Input Barang: "))
+    BULAN = int(input("Masukkan Bulan Input Barang: "))
+    TAHUN = int(input("Masukkkan Tahun Input Barang: "))
+    data['Tanggal_Masuk']= datetime.datetime(TAHUN,BULAN,TANGGAL)
 
-input_barang = input("Masukkan Nama Barang yang akan di Input:")
-input_harga = int(input("Masukkan Harga Barang:"))
-input_Tanggal = input("Masukkan Tanggal (YYYY,MM,DD)")
+    KEY = ''.join(random.choice(string.ascii_uppercase) for i in range (6))
+    data_barang.update ({KEY:data})
+
+    print (f"\n{'KODE':<6} {'Nama Barang': <12} {'Harga' : <6} {'Tanggal Input' : <13} ")
+    print ("-"*50)
+    for i in data_barang:
+        KEY = i
+        NAMABARANG = data_barang[KEY]['Nama Barang']
+        HARGA = data_barang[KEY]['Harga']
+        TANGGALINPUT = data_barang[KEY]['Tanggal_Masuk'].strftime("%x")
+        print(f"\n{KEY:<6} {NAMABARANG: <12} {HARGA : <6} {TANGGALINPUT : <13}")
+    lanjut = input("lanjut isi data atau gak? (y/n): ")
+    print (lanjut)
+    if lanjut == 'n' :
+        break
+
+
 
 
