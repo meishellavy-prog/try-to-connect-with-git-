@@ -40,3 +40,13 @@ def data_warung(namabarang):
 2. HARGA = {HARGA}
 3. STOK = {STOK} """)
 data_warung(barang_)
+
+
+#day 35 tanggal 28 agustus 2026 
+#fungsi dan return 
+#operasi matematika 
+
+def operasi_matematika(angka_1, angka_2):
+    return angka_1 + angka_2 
+
+y = operasi_matematika(7,3)
