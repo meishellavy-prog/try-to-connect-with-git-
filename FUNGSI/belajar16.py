@@ -69,5 +69,13 @@ hasil tambah (k) = {k}
 hasil kurang (l) = {l}
 hasil bagi (m) = {m}
 hasil kali (n)= {n}
-hasil y + k,l,m,n = {z}
+hasil y + (k,l,m,n) = {z}
 """)
+
+#day 36 tanggal 29 agustus 2026 
+#default argumen 
+def aku_nama(nama = "kamu"):
+    print (f"{nama}, iyaaa kamu cantikk bangettt!!")
+
+
+aku_nama()
