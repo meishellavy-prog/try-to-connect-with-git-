@@ -79,3 +79,4 @@ def aku_nama(nama = "kamu"):
 
 
 aku_nama()
+#skip day tanggal 30 agustus 2026 
