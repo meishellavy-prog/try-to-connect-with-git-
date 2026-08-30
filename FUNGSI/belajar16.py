@@ -80,3 +80,44 @@ def aku_nama(nama = "kamu"):
 
 aku_nama()
 #skip day tanggal 30 agustus 2026 
+#day 37 tanggal 31 agustus 2026 
+#latihan fungsi 
+#mencari keliling dan luas persegi panjang 
+import os
+def judul_program():
+    os.system("clear")
+    '''ini adalah judul program'''
+    print (f'{"MENGHITUNG LUAS":^40}')
+    print (f'{"DAN KELILING PERSEGI PANJANG":^40}')
+    print (f'{"-"*40:^40}')
+
+def input_user():
+    '''input user'''
+    panjang = int(input("Masukkan besar panjang :"))
+    lebar = int(input("Masukkan besar lebar :"))
+    return panjang,lebar
+
+def hitung_luas(panjangs,lebars):
+    '''menghitung luas'''
+    return panjangs*lebars
+   
+
+def hitung_keliling(panjange,lebare):
+    '''hitung keliling'''
+    return 2*(panjange+lebare)
+    
+def display(message,value):
+    '''displaynya '''
+    print (f"hasil dari {message} adalah : {value}")
+
+while True:
+    judul_program()
+    PANJANG,LEBAR = input_user()
+    LUAS = hitung_luas(PANJANG,LEBAR)
+    KELILING = hitung_keliling(PANJANG,LEBAR)
+    display("luas",LUAS)
+    display("keliling",KELILING)
+    lanjutgak = input("masih mau lanjut?(y/n): ")
+    if lanjutgak == "n" :
+        break 
+print("AKHIR PROGRAM, THANK YOU")
