@@ -112,11 +112,17 @@ def display(message,value):
 
 while True:
     judul_program()
+    #day 38 tanggal 1 september 2026 
+    #memilih ingin menghitung luas atau keliling
+    mauapa = input("mau hitung apa?(luas/keliling):")    
     PANJANG,LEBAR = input_user()
-    LUAS = hitung_luas(PANJANG,LEBAR)
-    KELILING = hitung_keliling(PANJANG,LEBAR)
-    display("luas",LUAS)
-    display("keliling",KELILING)
+    if mauapa.lower() == "luas":
+        LUAS = hitung_luas(PANJANG,LEBAR)
+        display("luas",LUAS)
+    elif mauapa.lower() == "keliling":
+        KELILING = hitung_keliling(PANJANG,LEBAR)
+        display("keliling",KELILING)
+
     lanjutgak = input("masih mau lanjut?(y/n): ")
     if lanjutgak == "n" :
         break 
