@@ -127,3 +127,16 @@ while True:
     if lanjutgak == "n" :
         break 
 print("AKHIR PROGRAM, THANK YOU")
+
+#day 39 tanggal 2 september 2026
+#menentukan type suatu fungsi
+def fungsi_1(angka:int)-> int:
+    '''ini adalah fungsi 1'''
+    return angka + 10   
+
+def fungsi_2(string:str)-> str:
+    '''ini adalah fungsi 2'''
+    return string + " ini adalah fungsi 2"
+
+fungsi_1(10)
+fungsi_2("aku")
