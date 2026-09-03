@@ -140,3 +140,21 @@ def fungsi_2(string:str)-> str:
 
 fungsi_1(10)
 fungsi_2("aku")
+
+#day 40 tanggal 3 september 2026
+#*args pada fungsi
+def fungsi_3(*args):
+    '''ini adalah fungsi 3'''
+    for i in args:
+        print (f"ini adalah argumen ke {i}")
+
+fungsi_3(1,2,3,4,5,6,7,8,9,10)
+
+def fungsi_4(*angka):
+    '''ini adalah fungsi 4'''
+    total = 0
+    for i in angka:
+        total += i
+    return total
+print (f"total dari semua angka adalah : {fungsi_4(1,2,3,4,5,6,7,8,9,10)}")
+
