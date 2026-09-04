@@ -158,3 +158,10 @@ def fungsi_4(*angka):
     return total
 print (f"total dari semua angka adalah : {fungsi_4(1,2,3,4,5,6,7,8,9,10)}")
 
+#day 41 tanggal 4 september 2026
+#**kwargs pada fungsi
+def fungsi_5(**kwargs):
+    '''ini adalah fungsi 5'''
+    for key, value in kwargs.items():
+        print (f"ini adalah argumen ke {key} dengan value {value}")
+fungsi_5(nama="aku", umur=20, hobi="makan")
