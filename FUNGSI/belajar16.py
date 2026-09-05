@@ -165,3 +165,15 @@ def fungsi_5(**kwargs):
     for key, value in kwargs.items():
         print (f"ini adalah argumen ke {key} dengan value {value}")
 fungsi_5(nama="aku", umur=20, hobi="makan")
+
+# day 42 tanggal 5 september 2026
+#studi kasus *args dan **kwargs
+def fungsi_6(*args, **kwargs):
+    '''ini adalah fungsi 6'''
+    total = 0
+    for i in args:
+        total += i
+    print (f"total dari semua angka adalah : {total}")
+    for key, value in kwargs.items():
+        print (f"ini adalah argumen ke {key} dengan value {value}")
+fungsi_6(1,2,3,4,5,6,7,8,9,10, nama="aku", umur=20, hobi="makan")
