@@ -54,3 +54,9 @@ print("Even Numbers using Lambda:", even_numbers)
 #3. Lambda function digunakan untuk menentukan kondisi penyaringan, dalam hal ini kita ingin menyaring elemen yang genap (x % 2 == 0).
 #4. Hasil dari filter() adalah filter object yang berisi elemen-elemen yang memenuhi kondisi penyaringan.
 #5. Kita mengkonversi filter object menjadi list menggunakan fungsi list(), sehingga kita mendapatkan list baru even_numbers yang berisi elemen-elemen genap dari list numbers.
+#day 45 tanggal 8 september 2026 
+#kelipatan 3 menggunakan anonymous function dengan lambda function:
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+multiples_of_3 = list
+(filter(lambda x: x % 3 == 0, numbers))
+print("Multiples of 3 using Lambda:", multiples_of_3)
