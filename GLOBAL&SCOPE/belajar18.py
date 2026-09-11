@@ -9,3 +9,5 @@ def change_global_variable():
 print("Nilai x sebelum fungsi dipanggil:", x)  # Output: 10
 change_global_variable()  # memanggil fungsi untuk mengubah nilai variabel global
 print("Nilai x setelah fungsi dipanggil:", x)  # Output: 20 
+#dy 47 tanggal 11 september 2026 
+#full materi , tidak ada codingan
