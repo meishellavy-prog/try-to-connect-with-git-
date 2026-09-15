@@ -18,4 +18,9 @@ print("Nilai z dari file belajar18.py:", belajar18.z)  # Output: 15
 from belajar18 import change_global_variable  # mengimpor fungsi change_global_variable() dari file belajar18.py
 # setelah mengimpor fungsi change_global_variable(), kita dapat memanggilnya di dalam file belajar19.py tanpa harus menulis nama file belajar18.py. Berikut contohnya:
 change_global_variable()  # memanggil fungsi change_global_variable() dari file belajar18.py
+#day 50 tanggal 15 september 2026
+#kita sekarang membuat modul python kita sendiri. Modul python adalah file python yang berisi fungsi, variabel, dan kelas yang dapat digunakan di dalam file python lain. Kita dapat membuat modul python dengan cara membuat file python baru dan menulis fungsi, variabel, dan kelas di dalamnya. Berikut contohnya:
+#misalkan kita ingin membuat modul python bernama "my_module.py" yang berisi fungsi dan variabel. Kita dapat membuat file python baru bernama "my_module.py" dan menulis fungsi dan variabel di dalamnya. Berikut contohnya:
+#lalu kita dapat mengimpor modul python "my_module.py" ke dalam file python kita dengan menggunakan kata kunci "import". Berikut contohnya:
+import my_module  # mengimpor modul python "my_module.py"   
 
