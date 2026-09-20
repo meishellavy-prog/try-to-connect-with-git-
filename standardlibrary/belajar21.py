@@ -9,3 +9,9 @@ import math
 angka = 16
 akar_kuadrat = math.sqrt(angka)
 print(f"Akar kuadrat dari {angka} adalah {akar_kuadrat}")
+#day 53 tanggal 20 september 2026
+#sekarang kita akan belajar modul random, modul ini digunakan untuk menghasilkan angka acak
+import random
+#kita akan menggunakan fungsi randint() untuk menghasilkan angka acak antara 1 sampai 10
+angka_acak = random.randint(1, 10)
+print(f"Angka acak antara 1 sampai 10 adalah {angka_acak}")
