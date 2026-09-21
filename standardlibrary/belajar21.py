@@ -15,3 +15,9 @@ import random
 #kita akan menggunakan fungsi randint() untuk menghasilkan angka acak antara 1 sampai 10
 angka_acak = random.randint(1, 10)
 print(f"Angka acak antara 1 sampai 10 adalah {angka_acak}")
+#day 54 tanggal 21 September 2026
+#sekarang kita akan belajar modul datetime, modul ini digunakan untuk bekerja dengan tanggal dan waktu
+import datetime
+#kita akan menggunakan fungsi datetime.now() untuk mendapatkan tanggal dan waktu saat ini
+tanggal_waktu_sekarang = datetime.datetime.now()
+print(f"Tanggal dan waktu saat ini adalah {tanggal_waktu_sekarang}")
