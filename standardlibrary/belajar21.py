@@ -21,3 +21,9 @@ import datetime
 #kita akan menggunakan fungsi datetime.now() untuk mendapatkan tanggal dan waktu saat ini
 tanggal_waktu_sekarang = datetime.datetime.now()
 print(f"Tanggal dan waktu saat ini adalah {tanggal_waktu_sekarang}")
+#day 55 tanggal 22 September 2026 
+#sekarang kita akan belajar modul os, modul ini digunakan untuk berinteraksi dengan sistem operasi
+import os
+#kita akan menggunakan fungsi os.getcwd() untuk mendapatkan direktori kerja saat ini
+direktori_kerja = os.getcwd()
+print(f"Direktori kerja saat ini adalah {direktori_kerja}")
