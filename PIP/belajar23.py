@@ -8,3 +8,4 @@ import numpy as np
 vector_a = np.array([1,2,3,4])
 print(vector_a)
 print (vector_a**2)
+print (vector_a*200)
