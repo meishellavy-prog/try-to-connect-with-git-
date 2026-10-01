@@ -1,0 +1,5 @@
+ini file eksternal txt
+Nama    : Meishella Noer Alysia
+Umur    : 19 Tahun 
+    Saya belajar Python hari ke 61 ini belajar bagaimana membaca file eksternal. 
+Ini merupakan file eksternal yang bernama "eksternalfile.txt". 
