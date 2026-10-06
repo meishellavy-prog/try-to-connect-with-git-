@@ -3,23 +3,26 @@
 
 import os
 from unittest import case
+import CRUD
 
-while True:
-    if __name__ == "__main__":
-        sistem_operasi = os.name
-        match sistem_operasi:
-            case "posix" : print("\033[H\033[2J\033[3J", end="")
-            case "nt" : os.system ("cls")
 
-        print ("SELAMAT DATANG")
-        print ("DATA PERPUSTAKAAN")
-        print ("="*30)
-        print ('''
-        1. Read 
-        2. Add Data
-        3. Update Data
-        4. Delete Data
-        ''')
+if __name__ == "__main__":
+    sistem_operasi = os.name
+    match sistem_operasi:
+        case "posix" : print("\033[H\033[2J\033[3J", end="")
+        case "nt" : os.system ("cls")
+
+    print ("SELAMAT DATANG")
+    print ("DATA PERPUSTAKAAN")
+    print ("="*30)
+    CRUD.nulis()
+    print ('''
+    1. Read 
+    2. Add Data
+    3. Update Data
+    4. Delete Data
+    ''')
+    while True:
         pilihan = input("Masukkan Pilihan Anda : ")
         print("\n","="*30, "\n")
         match pilihan:
