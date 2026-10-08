@@ -3,7 +3,7 @@
 
 import os
 from unittest import case
-import CRUD
+import CRUD as CRUD
 
 
 if __name__ == "__main__":
